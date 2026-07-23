@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.16...3.26)
-project(continuous_clustering VERSION 0.0.1 LANGUAGES CXX)
+# C is required on Ubuntu 24+/PCL 1.14 so VTK::mpi can resolve MPI::MPI_C
+project(continuous_clustering VERSION 0.0.1 LANGUAGES C CXX)
 
 ## Compile as C++17, supported in ROS Kinetic and newer
 add_compile_options(-std=c++17)

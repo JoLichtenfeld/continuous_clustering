@@ -1,5 +1,11 @@
 # Low Latency Instance Segmentation by Continuous Clustering for LiDAR Sensors
 
+## Local changes (Ubuntu 24.04 / ROS 2 Jazzy)
+
+- `CMakeLists.txt`: enable C language (`LANGUAGES C CXX`) so the no-ROS build works with PCL 1.14 / VTK on Ubuntu 24 (fixes missing `MPI::MPI_C`).
+
+
+
 [![Basic Build Workflow](https://github.com/UniBwTAS/continuous_clustering/actions/workflows/basic-build-ci.yaml/badge.svg?branch=master)](https://github.com/UniBwTAS/continuous_clustering/actions/workflows/basic-build-ci.yaml)
 [![Publish Docker image](https://github.com/UniBwTAS/continuous_clustering/actions/workflows/publish-docker-image.yaml/badge.svg)](https://github.com/UniBwTAS/continuous_clustering/actions/workflows/publish-docker-image.yaml)
 [![arXiv](https://img.shields.io/badge/arXiv-2311.13976-b31b1b.svg)](https://arxiv.org/abs/2311.13976)
